@@ -59,7 +59,7 @@ local Button = MainTab:CreateButton({
 local HubsTab = Window:CreateTab("Hubs & Common Scripts", 17642264096) -- Title, Image
 local HubsSection = HubsTab:CreateSection("Keyless Hubs")
 
-local Button = MainTab:CreateButton({
+local Button = HubsTab:CreateButton({
    Name = "RedZ",
    Callback = function()
             
@@ -72,21 +72,21 @@ local Button = MainTab:CreateButton({
    end,
 })
 
-local Button = MainTab:CreateButton({
+local Button = HubsTab:CreateButton({
    Name = "SpeedHub",
    Callback = function()
         print("imagine")
    end,
 })
 
-local Button = MainTab:CreateButton({
+local Button = HubsTab:CreateButton({
    Name = "Azure",
    Callback = function()
        print("imagine") 
    end,
 })
 
-local Button = MainTab:CreateButton({
+local Button = HubsTab:CreateButton({
    Name = "Ronix",
    Callback = function()
         print("imagine")
