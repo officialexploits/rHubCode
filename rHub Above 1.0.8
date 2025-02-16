@@ -2,7 +2,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 
 local Window = Rayfield:CreateWindow({
-   Name = "rHub Above",
+   Name = "rHub Above 1.0.8",
    Icon = 0,
    LoadingTitle = "Loading Interface..",
    LoadingSubtitle = "powered by rayfield technologies",
@@ -39,14 +39,14 @@ local MainTab = Window:CreateTab("Functions & Home", 4483362458) -- Title, Image
 local MainSection = MainTab:CreateSection("Team Switcher")
 
 
-local Button = Tab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Pirates",
    Callback = function()
         getgenv().Team = "Pirates"
    end,
 })
 
-local Button = Tab:CreateButton({
+local Button = MainTab:CreateButton({
    Name = "Marines",
    Callback = function()
         getgenv().Team = "Marines"
