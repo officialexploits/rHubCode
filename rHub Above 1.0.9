@@ -2,7 +2,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 
 local Window = Rayfield:CreateWindow({
-   Name = "rHub Above 1.0.8",
+   Name = "rHub Above",
    Icon = 0,
    LoadingTitle = "Loading Interface..",
    LoadingSubtitle = "powered by rayfield technologies",
@@ -35,6 +35,7 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
+--//--------------------------------------------------------------------------------//--
 local MainTab = Window:CreateTab("Functions & Home", 4483362458) -- Title, Image
 local MainSection = MainTab:CreateSection("Team Switcher")
 
@@ -50,5 +51,44 @@ local Button = MainTab:CreateButton({
    Name = "Marines",
    Callback = function()
         getgenv().Team = "Marines"
+   end,
+})
+
+--//--------------------------------------------------------------------------------//--
+
+local HubsTab = Window:CreateTab("Hubs & Common Scripts", 17642264096) -- Title, Image
+local HubsSection = HubsTab:CreateSection("Keyless Hubs")
+
+local Button = MainTab:CreateButton({
+   Name = "RedZ",
+   Callback = function()
+            
+    local Settings = {
+      JoinTeam = "Pirates";
+      Translator = true;
+    }
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))(Settings)
+            
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "SpeedHub",
+   Callback = function()
+        print("imagine")
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Azure",
+   Callback = function()
+       print("imagine") 
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Ronix",
+   Callback = function()
+        print("imagine")
    end,
 })
