@@ -73,22 +73,35 @@ local Button = HubsTab:CreateButton({
 })
 
 local Button = HubsTab:CreateButton({
-   Name = "SpeedHub",
+   Name = "SpeedHubX",
    Callback = function()
-        print("imagine")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
    end,
 })
 
 local Button = HubsTab:CreateButton({
    Name = "Azure",
    Callback = function()
-       print("imagine") 
+       getgenv().AutoLoad = false --Will Load Script On Server Hop
+       getgenv().SlowLoadUi  = false
+       getgenv().ForceUseSilentAimDashModifier = false --Force turn on silent aim , if error then executor problem
+       getgenv().ForceUseWalkSpeedModifier = false --Force turn on Walk Speed Modifier , if error then executor problem
+       loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
    end,
 })
 
 local Button = HubsTab:CreateButton({
    Name = "Ronix",
    Callback = function()
-        print("imagine")
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b5f968ca22436160479678e830766cc4.lua"))()
+   end,
+})
+
+local CommonScriptsSection = HubsTab:CreateSection("Common Scripts")
+
+local Button = HubsTab:CreateButton({
+   Name = "Infinite Yeild",
+   Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
 })
