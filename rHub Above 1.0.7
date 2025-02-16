@@ -31,6 +31,24 @@ local Window = Rayfield:CreateWindow({
       FileName = "rhubAboveKeys", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The users key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"https://pastebin.com/raw/bvYUMdeg"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+      Key = {"https://pastebin.com/raw/bvYUMdeg"}
    }
+})
+
+local MainTab = Window:CreateTab("Functions & Home", 4483362458) -- Title, Image
+local MainSection = MainTab:CreateSection("Team Switcher")
+
+
+local Button = Tab:CreateButton({
+   Name = "Pirates",
+   Callback = function()
+        getgenv().Team = "Pirates"
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Marines",
+   Callback = function()
+        getgenv().Team = "Marines"
+   end,
 })
