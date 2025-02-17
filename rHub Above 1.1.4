@@ -2,10 +2,10 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 
 local Window = Rayfield:CreateWindow({
-   Name = "rHub Above 1.1.3",
+   Name = "rHub Above 1.1.4",
    Icon = 0,
-   LoadingTitle = "Loading Interface..",
-   LoadingSubtitle = "powered by rayfield technologies",
+   LoadingTitle = "go outside.",
+   LoadingSubtitle = "touch sum grass",
    Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
@@ -53,6 +53,14 @@ local Button = MainTab:CreateButton({
         getgenv().Team = "Marines"
    end,
 })
+
+Rayfield:Notify({
+   Title = "rHub just updated!",
+   Content = "happy scripting! 🎂",
+   Duration = 5,
+   Image = 4483362458,
+})
+
 
 --//--------------------------------------------------------------------------------//--
 
